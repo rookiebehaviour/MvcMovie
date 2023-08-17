@@ -9,7 +9,7 @@ html {
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.05rem white, 0 0 0 0.15rem #258cfb;
 }
 
 html {
@@ -21,16 +21,11 @@ body {
     margin-bottom: 60px;
 }
 
-.btn {
+.btn, .btn-focus, .btn:active:focus {
     border: none;
     box-shadow: none;
     outline: none;
 }
-
-    .btn:focus {
-        box-shadow: none;
-        border: none;
-    }
 
 .btn-primary {
     margin: 10px 0;
@@ -46,13 +41,23 @@ body {
     color: aqua;
 }
 
+.dark-mode .btn-primary {
+    background-color: aqua;
+    color: black;
+}
+
 .dark-mode th {
     color: #cdf6f4;
-    }
+}
 
 .dark-mode tr, .dark-mode .footer {
-        color: #F5F5F5;
-    }
+    color: #F5F5F5;
+}
+
+.dark-mode .btn-link.nav-link:focus, .dark-mode .form-control:focus, .dark-mode .form-check-input:focus {
+    box-shadow: 0 0 0 0.05rem white, 0 0 0 0.15rem aqua;
+    outline: none;
+}
 
     
   
